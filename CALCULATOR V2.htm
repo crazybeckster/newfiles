@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	<title>B&amp;C Intergrated Support Tool</title>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="dataTables.responsive.css" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<br><br><br><br>
+    <!-- Page Content -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li class="active">Discrepancy Calculator</li>
+</ol></h3>
+  </div>
+  <div class="panel-body" style="border-right-style: solid; border-right-width: 1px; padding-right: 4px">
+
+<table border="1" width="100%" style="border-width: 0px">
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="25%" colspan="5" align="center">
+		APPLICANT</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" colspan="12" align="center">
+		BHMRC</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">TSB</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">RTI</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">BIK</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">SA</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">OTHER</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">START</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">END</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">DAYS</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">BENEFIT</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">FREQ.</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">RATE</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">TSB</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">RTI</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">BIK</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">SA</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">OTHER</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	
+<!-- ROW 1 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    <tr>
+	    <td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	    <td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="APP-TSB" id="APP-TSB" size="8">
+	    <td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="APP-RTI" id="APP-RTI" size="8"></td>		
+	    <td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="APP-BIK" id="APP-BIK" size="8"></td>
+	    <td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="APP-SA" id="APP-SA" size="8"></td>
+	    <td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="APP-OTHER" id="APP-OTHER" size="8"></td>
+	    <td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	    <td style="border-style: none; border-width: medium" width="6%" align="center"><input type="text" id="HMRC-TSB-01-START" size="9"</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center"><input type="text" id="HMRC-TSB-01-END" size="9"</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center"><input type="text" id="HMRC-TSB-01-DURATION" size="2"</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center"><select id="HMRCTSB0100" onChange="return setHMRCTSB0100()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+		</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center"><input type="text" class="HMRC-TSB-01-DAYS" id="HMRC-TSB-01-DAYS" size="1"></td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="HMRC-TSB-01-RATE" id="HMRC-TSB-01-RATE" size="4"></td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-01-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="HMRC-TSB" id="HMRC-TSB" size="8">
+		<td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="HMRC-RTI" id="HMRC-RTI" size="8"></td>		
+		<td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="HMRC-BIK" id="HMRC-BIK" size="8"></td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="HMRC-SA" id="HMRC-SA" size="8"></td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center"><input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="8"></td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 01 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-01-START,#HMRC-TSB-01-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $( "#HMRC-TSB-01-START" ).datepicker({ dateFormat: 'dd-mm-yy' });
+    $( "#HMRC-TSB-01-END" ).datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-01-END').change(function() {
+
+    var start = $('#HMRC-TSB-01-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-01-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-01-DURATION').val(days);
+     }
+      else {
+    alert ("We aren't running compliance checks on time travel - check your dates !!");
+    $('#HMRC-TSB-01-START').val("");
+    $('#HMRC-TSB-01-END').val("");
+    $('#HMRC-TSB-01-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 01-->
+<script>
+    $("#HMRC-TSB-01-BUTTON-CALC").click(function() {
+    alert('TSB Re-Calculated And Copied To Clipboard !!')
+
+    var rate = document.getElementById("HMRC-TSB-01-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-01-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-01-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-01-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-02-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-03-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-04-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-05-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-06-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-07-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-08-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-09-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-10-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">
+		11</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">
+		12</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+	<tr>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="6%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="10%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">
+		14</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="5%" align="center">&nbsp;</td>
+		<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+    <!-- Page Content -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../../themes/addons/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../themes/addons/bootstrap.min.js"></script>
+    
+    <!-- DataTables JavaScript -->
+    <script src="../../themes/addons/jquery.dataTables.min.js"></script>
+    <script src="../../themes/addons/dataTables.bootstrap.min.js"></script>
+    <script src="../../themes/addons/dataTables.responsive.js"></script>
+
+    <script src="../../themes/addons/bootstrap-datepicker.js"></script>
+    <script src="../../themes/addons/bootstrap-datepicker.min.js"></script>
+    
+    <script src="../../themes/addons/setHMRCTSB01.js"></script>
+    <script src="../../themes/addons/setHMRCTSB02.js"></script>
+    <script src="../../themes/addons/setHMRCTSB03.js"></script>
+    <script src="../../themes/addons/setHMRCTSB04.js"></script>
+    <script src="../../themes/addons/setHMRCTSB05.js"></script>
+    <script src="../../themes/addons/setHMRCTSB06.js"></script>    
+    <script src="../../themes/addons/setHMRCTSB07.js"></script>
+    <script src="../../themes/addons/setHMRCTSB08.js"></script>
+    <script src="../../themes/addons/setHMRCTSB09.js"></script>
+    <script src="../../themes/addons/setHMRCTSB10.js"></script>
+
+    <script src="../../themes/addons/setHMRCHHNOTES.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
+    
+  </body>
+</html>
