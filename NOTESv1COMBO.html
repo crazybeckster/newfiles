@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	<title>Notes</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="dataTables.responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- FIXED NAVBAR: Need to be updated on every page :( -->
+    
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="../../index.html">Intergrated Support Tool</a>
+		</div>
+			<ul class="nav navbar-nav">
+				<li><a href="media.html">Home</a></li>
+				<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tasks<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="themes/default/index.html">Task 1</a></li>
+				<li><a href="#">Task 2</a></li>
+			</ul>
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Quick Links<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<li><a href="#">Helpcards</a></li>
+				<li><a href="#">SOP</a></li>
+				<li><a href="#">Quality Maps</a></li>
+				<li><a href="#">Updates</a></li>
+			</ul>
+				<li><a href="FAQ.html">FAQ</a></li>
+				<li><a href="search.html">Search</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Switch Theme<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+                <li><a href="media.html">Default</a></li>
+                <li class="divider"></li>
+                <li><a href="../amethyst/index.html">Amethyst</a></li>
+                <li><a href="../asphalt/index.html">Asphalt</a></li>
+                <li><a href="../belize%20blue/index.html">Belize Blue</a></li>
+                <li><a href="../concrete/index.html">Concrete</a></li>
+                <li><a href="../emerald/index.html">Emerald</a></li>
+                <li><a href="../orange/index.html">Orange</a></li>
+                <li><a href="../pumpkin/index.html">Pumpkin</a></li>
+                <li><a href="../pomegranate/index.html">Pomegranate</a></li>
+                <li><a href="../turquoise/index.html">Turquoise</a></li>
+              </ul>              
+		</div>
+	</div>
+	</nav> 
+
+
+<br><br><br><br>
+<div class="container">
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h6 class="panel-title"><ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Quick Links</a></li>
+  <li class="active">Household Notes Manager</li>
+</ol></h6>
+  </div>
+  <div class="panel-body">
+
+<!-- CASEWORKER DETAILS LISTED ALPHABETICALLY BY FIRSTNAME -->
+<!-- "VALUE=" IS AREA/PID/PHONE NUMBER -->
+<h2>Household Notes Manager</h2>
+<p>The notes below can be edited directly on this page on then copied to your clipboard using the relevant button.</p>
+<p>Please ensure you have NTC open at the Household Notes pages before copying the note you require.</p>
+<p>To reset this page, please use the reset button below:</p>
+
+<button type="button" class="btn" onClick="refreshPage()">Reset This Page</button>
+<script>
+    function refreshPage(){
+    window.location.href = window.location.href
+    } 
+</script>
+<br><br>
+<p>Please select your name from the list below and confirm your details are correct:</p>
+    <div class="form-group">
+      <label for="CASEWORKERS">Select list:</label>
+        <select class="form-control" id="CASEWORKERS">
+          <option selected="selected" value="">None</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generac1</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generac2</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generac3</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generic4</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generec5</option>
+          <option value="XXXX/7654321/XXXXXXXXXX ExX">Karen Whiston</option>
+          <option value="XXXX/1234567/XXXXXXXXXX ExX">Rebecca Hankin</option>
+        </select>
+        <!-- <small>If your details are incorrect, please click here.</small>-->
+        <small>If your name is not on the list, please select the "generic" option from the dropdown list and manually update your group, PID and telephone number on the Household note you require.</small>
+    </div> 
+
+<script>
+function onchange(e) {
+    if (e.currentTarget.value === 'None') {
+        window.location.href = window.location.href
+    }
+}
+</script>
+
+<!-- START OF HOUSEHOLD NOTES -->
+<!-- AREA, PID AND PHONE NUMBER/EXTENSION HAVE BEEN REMOVED AS THESE ARE INSERTED BY THE DROPDOWN ABOVE -->	
+
+    <!-- 01. HH01 HH Note -->
+        <div class="form-group">
+        <label for="comment">HH01</label>
+        <textarea class="form-control" rows="1" id="HH01">HH01 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH01">Copy To Clipboard</button>
+    </div>
+
+    <!-- 02. HH02 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH02</label>
+        <textarea class="form-control" rows="1" id="HH02">HH02 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH02">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 03. HH03 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH03</label>
+        <textarea class="form-control" rows="1" id="HH03">HH03 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH03">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 04. HH04 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH04</label>
+        <textarea class="form-control" rows="1" id="HH04">HH04 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH04">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 05. HH05 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH05</label>
+        <textarea class="form-control" rows="1" id="HH05">HH05 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH05">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 06. HH06 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH06</label>
+        <textarea class="form-control" rows="1" id="HH06">HH06 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH06">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 07. HH07 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH07</label>
+        <textarea class="form-control" rows="1" id="HH07">HH07 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH07">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 08. HH08 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH08</label>
+        <textarea class="form-control" rows="1" id="HH08">HH08 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH08">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 09. HH09 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH09</label>
+        <textarea class="form-control" rows="1" id="HH09">HH09 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH09">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 10. HH10 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH10</label>
+        <textarea class="form-control" rows="1" id="HH10">HH10 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH10">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 11. HH11 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH11</label>
+        <textarea class="form-control" rows="1" id="HH11">HH11 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH11">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 12. HH12 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH12</label>
+        <textarea class="form-control" rows="1" id="HH12">HH12 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH12">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 13. HH13 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH13</label>
+        <textarea class="form-control" rows="1" id="HH13">HH13 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH13">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 14. HH14 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH14</label>
+        <textarea class="form-control" rows="1" id="HH14">HH14 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH14">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 15. HH15 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH15</label>
+        <textarea class="form-control" rows="1" id="HH15">HH15 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH15">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 16. HH16 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH16</label>
+        <textarea class="form-control" rows="1" id="HH16">HH16 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH16">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 17. HH17 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH17</label>
+        <textarea class="form-control" rows="1" id="HH17">HH17 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH17">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 18. HH18 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH18</label>
+        <textarea class="form-control" rows="1" id="HH18">HH18 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH18">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 19. HH19 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH19</label>
+        <textarea class="form-control" rows="1" id="HH19">HH19 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH19">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 20. HH20 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH20</label>
+        <textarea class="form-control" rows="1" id="HH20">HH20 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH20">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 21. HH21 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH21</label>
+        <textarea class="form-control" rows="1" id="HH21">HH21 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH21">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 22. HH22 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH22</label>
+        <textarea class="form-control" rows="1" id="HH22">HH22 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH22">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 23. HH23 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH23</label>
+        <textarea class="form-control" rows="1" id="HH23">HH23 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH23">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 24. HH24 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH24</label>
+        <textarea class="form-control" rows="1" id="HH24">HH24 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH24">Copy To Clipboard</button>
+    </div> 
+
+    <!-- 25. HH25 HH Note -->
+    <div class="form-group">
+        <label for="comment">HH25</label>
+        <textarea class="form-control" rows="1" id="HH25">HH25 BLAH BLAH </textarea>
+        <button class="btn" data-clipboard-target="#HH25">Copy To Clipboard</button>
+    </div> 
+
+<!-- THIS SCRIPT COMBINES THE CASEWORKER DETAILS FROM THE DROPDOWN WITH EACH HOUSEHOLD NOTE -->
+
+<script>
+    var DROPDOWN = document.getElementById('CASEWORKERS');
+    var HH01 = document.getElementById('HH01');
+    var HH02 = document.getElementById('HH02');
+    var HH03 = document.getElementById('HH03');
+    var HH04 = document.getElementById('HH04');
+    var HH05 = document.getElementById('HH05');
+    var HH06 = document.getElementById('HH06');
+    var HH07 = document.getElementById('HH07');
+    var HH08 = document.getElementById('HH08');
+    var HH09 = document.getElementById('HH09');
+    var HH10 = document.getElementById('HH10');
+    var HH11 = document.getElementById('HH11');
+    var HH12 = document.getElementById('HH12');
+    var HH13 = document.getElementById('HH13');
+    var HH14 = document.getElementById('HH14');
+    var HH15 = document.getElementById('HH15');
+    var HH16 = document.getElementById('HH16');
+    var HH17 = document.getElementById('HH17');
+    var HH18 = document.getElementById('HH18');
+    var HH19 = document.getElementById('HH19');
+    var HH20 = document.getElementById('HH20');
+    var HH21 = document.getElementById('HH21');
+    var HH22 = document.getElementById('HH22');    
+    var HH23 = document.getElementById('HH23');
+    var HH24 = document.getElementById('HH24');    
+    var HH25 = document.getElementById('HH25');    
+    
+    DROPDOWN.onchange = function(){
+    HH01.value = HH01.value='HH01 BLAH BLAH ';
+    HH01.value = HH01.value  + this.value;
+    
+    HH02.value = HH02.value='HH02 BLAH BLAH ';
+    HH02.value = HH02.value  + this.value;
+    
+    HH03.value = HH03.value='HH03 BLAH BLAH ';
+    HH03.value = HH03.value  + this.value;
+    
+    HH04.value = HH04.value='HH04 BLAH BLAH ';
+    HH04.value = HH04.value  + this.value;
+    
+    HH05.value = HH05.value='HH05 BLAH BLAH ';
+    HH05.value = HH05.value  + this.value;
+    
+    HH06.value = HH06.value='HH06 BLAH BLAH ';
+    HH06.value = HH06.value  + this.value;
+    
+    HH07.value = HH07.value='HH07 BLAH BLAH ';
+    HH07.value = HH07.value  + this.value;
+    
+    HH08.value = HH08.value='HH08 BLAH BLAH ';
+    HH08.value = HH08.value  + this.value;
+    
+    HH09.value = HH09.value='HH09 BLAH BLAH ';
+    HH09.value = HH09.value  + this.value;
+    
+    HH10.value = HH10.value='HH10 BLAH BLAH ';
+    HH10.value = HH10.value  + this.value;
+    
+    HH11.value = HH11.value='HH11 BLAH BLAH ';
+    HH11.value = HH11.value  + this.value;
+    
+    HH12.value = HH12.value='HH12 BLAH BLAH ';
+    HH12.value = HH12.value  + this.value;
+    
+    HH13.value = HH13.value='HH13 BLAH BLAH ';
+    HH13.value = HH13.value  + this.value;
+    
+    HH14.value = HH14.value='HH14 BLAH BLAH ';
+    HH14.value = HH14.value  + this.value;
+    
+    HH15.value = HH15.value='HH15 BLAH BLAH ';
+    HH15.value = HH15.value  + this.value;
+    
+    HH16.value = HH16.value='HH16 BLAH BLAH ';
+    HH16.value = HH16.value  + this.value;
+    
+    HH17.value = HH17.value='HH17 BLAH BLAH ';
+    HH17.value = HH17.value  + this.value;
+    
+    HH18.value = HH18.value='HH18 BLAH BLAH ';
+    HH18.value = HH18.value  + this.value;
+    
+    HH19.value = HH19.value='HH19 BLAH BLAH ';
+    HH19.value = HH19.value  + this.value;
+    
+    HH20.value = HH20.value='HH20 BLAH BLAH ';
+    HH20.value = HH20.value  + this.value;
+    
+    HH21.value = HH21.value='HH21 BLAH BLAH ';
+    HH21.value = HH21.value  + this.value;
+    
+    HH22.value = HH22.value='HH22 BLAH BLAH ';
+    HH22.value = HH22.value  + this.value;
+    
+    HH23.value = HH23.value='HH23 BLAH BLAH ';
+    HH23.value = HH23.value  + this.value;
+    
+    HH24.value = HH24.value='HH24 BLAH BLAH ';
+    HH24.value = HH24.value  + this.value;
+    
+    HH25.value = HH25.value='HH25 BLAH BLAH ';
+    HH25.value = HH25.value  + this.value;
+
+
+
+
+
+                   
+    }
+</script>
+
+<script>
+
+function submitForm() {
+   // Get the first form with the name
+   // Hopefully there is only one, but there are more, select the correct index
+   var frm = document.getElementsByName('UA03')[0];
+   frm.submit(); // Submit
+   frm.reset();  // Reset
+   return false; // Prevent page refresh
+}
+
+</script>
+
+</body>
+</html>
+    <!-- Page Content -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../addons/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../addons/bootstrap.min.js"></script>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="../addons/clipboard.min.js"></script>      
+    
+ 
+    <!-- 3. Instantiate clipboard -->
+    <script>
+    
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+
+  
+  </body>
+</html>
+
+<!-- clipboard.js -->
+<script>
+import ClipboardAction from './clipboard-action';
+import Emitter from 'tiny-emitter';
+import listen from 'good-listener';
+
+/**
+ * Base class which takes one or more elements, adds event listeners to them,
+ * and instantiates a new `ClipboardAction` on each click.
+ */
+class Clipboard extends Emitter {
+    /**
+     * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
+     * @param {Object} options
+     */
+    constructor(trigger, options) {
+        super();
+
+        this.resolveOptions(options);
+        this.listenClick(trigger);
+    }
+
+    /**
+     * Defines if attributes would be resolved using internal setter functions
+     * or custom functions that were passed in the constructor.
+     * @param {Object} options
+     */
+    resolveOptions(options = {}) {
+        this.action    = (typeof options.action    === 'function') ? options.action    : this.defaultAction;
+        this.target    = (typeof options.target    === 'function') ? options.target    : this.defaultTarget;
+        this.text      = (typeof options.text      === 'function') ? options.text      : this.defaultText;
+        this.container = (typeof options.container === 'object')   ? options.container : document.body;
+    }
+
+    /**
+     * Adds a click event listener to the passed trigger.
+     * @param {String|HTMLElement|HTMLCollection|NodeList} trigger
+     */
+    listenClick(trigger) {
+        this.listener = listen(trigger, 'click', (e) => this.onClick(e));
+    }
+
+    /**
+     * Defines a new `ClipboardAction` on each click event.
+     * @param {Event} e
+     */
+    onClick(e) {
+        const trigger = e.delegateTarget || e.currentTarget;
+
+        if (this.clipboardAction) {
+            this.clipboardAction = null;
+        }
+
+        this.clipboardAction = new ClipboardAction({
+            action    : this.action(trigger),
+            target    : this.target(trigger),
+            text      : this.text(trigger),
+            container : this.container,
+            trigger   : trigger,
+            emitter   : this
+        });
+    }
+
+    /**
+     * Default `action` lookup function.
+     * @param {Element} trigger
+     */
+    defaultAction(trigger) {
+        return getAttributeValue('action', trigger);
+    }
+
+    /**
+     * Default `target` lookup function.
+     * @param {Element} trigger
+     */
+    defaultTarget(trigger) {
+        const selector = getAttributeValue('target', trigger);
+
+        if (selector) {
+            return document.querySelector(selector);
+        }
+    }
+
+    /**
+     * Returns the support of the given action, or all actions if no action is
+     * given.
+     * @param {String} [action]
+     */
+    static isSupported(action = ['copy', 'cut']) {
+        const actions = (typeof action === 'string') ? [action] : action;
+        let support = !!document.queryCommandSupported;
+
+        actions.forEach((action) => {
+            support = support && !!document.queryCommandSupported(action);
+        });
+
+        return support;
+    }
+
+    /**
+     * Default `text` lookup function.
+     * @param {Element} trigger
+     */
+    defaultText(trigger) {
+        return getAttributeValue('text', trigger);
+    }
+
+    /**
+     * Destroy lifecycle.
+     */
+    destroy() {
+        this.listener.destroy();
+
+        if (this.clipboardAction) {
+            this.clipboardAction.destroy();
+            this.clipboardAction = null;
+        }
+    }
+}
+
+
+/**
+ * Helper function to retrieve attribute value.
+ * @param {String} suffix
+ * @param {Element} element
+ */
+function getAttributeValue(suffix, element) {
+    const attribute = `data-clipboard-${suffix}`;
+
+    if (!element.hasAttribute(attribute)) {
+        return;
+    }
+
+    return element.getAttribute(attribute);
+}
+
+module.exports = Clipboard;
+</script>
+
+<!-- clipboard-action.js -->
+<script>
+import select from 'select';
+
+/**
+ * Inner class which performs selection from either `text` or `target`
+ * properties and then executes copy or cut operations.
+ */
+class ClipboardAction {
+    /**
+     * @param {Object} options
+     */
+    constructor(options) {
+        this.resolveOptions(options);
+        this.initSelection();
+    }
+
+    /**
+     * Defines base properties passed from constructor.
+     * @param {Object} options
+     */
+    resolveOptions(options = {}) {
+        this.action    = options.action;
+        this.container = options.container;
+        this.emitter   = options.emitter;
+        this.target    = options.target;
+        this.text      = options.text;
+        this.trigger   = options.trigger;
+
+        this.selectedText = '';
+    }
+
+    /**
+     * Decides which selection strategy is going to be applied based
+     * on the existence of `text` and `target` properties.
+     */
+    initSelection() {
+        if (this.text) {
+            this.selectFake();
+        }
+        else if (this.target) {
+            this.selectTarget();
+        }
+    }
+
+    /**
+     * Creates a fake textarea element, sets its value from `text` property,
+     * and makes a selection on it.
+     */
+    selectFake() {
+        const isRTL = document.documentElement.getAttribute('dir') == 'rtl';
+
+        this.removeFake();
+
+        this.fakeHandlerCallback = () => this.removeFake();
+        this.fakeHandler = this.container.addEventListener('click', this.fakeHandlerCallback) || true;
+
+        this.fakeElem = document.createElement('textarea');
+        // Prevent zooming on iOS
+        this.fakeElem.style.fontSize = '12pt';
+        // Reset box model
+        this.fakeElem.style.border = '0';
+        this.fakeElem.style.padding = '0';
+        this.fakeElem.style.margin = '0';
+        // Move element out of screen horizontally
+        this.fakeElem.style.position = 'absolute';
+        this.fakeElem.style[ isRTL ? 'right' : 'left' ] = '-9999px';
+        // Move element to the same position vertically
+        let yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        this.fakeElem.style.top = `${yPosition}px`;
+
+        this.fakeElem.setAttribute('readonly', '');
+        this.fakeElem.value = this.text;
+
+        this.container.appendChild(this.fakeElem);
+
+        this.selectedText = select(this.fakeElem);
+        this.copyText();
+    }
+
+    /**
+     * Only removes the fake element after another click event, that way
+     * a user can hit `Ctrl+C` to copy because selection still exists.
+     */
+    removeFake() {
+        if (this.fakeHandler) {
+            this.container.removeEventListener('click', this.fakeHandlerCallback);
+            this.fakeHandler = null;
+            this.fakeHandlerCallback = null;
+        }
+
+        if (this.fakeElem) {
+            this.container.removeChild(this.fakeElem);
+            this.fakeElem = null;
+        }
+    }
+
+    /**
+     * Selects the content from element passed on `target` property.
+     */
+    selectTarget() {
+        this.selectedText = select(this.target);
+        this.copyText();
+    }
+
+    /**
+     * Executes the copy operation based on the current selection.
+     */
+    copyText() {
+        let succeeded;
+
+        try {
+            succeeded = document.execCommand(this.action);
+        }
+        catch (err) {
+            succeeded = false;
+        }
+
+        this.handleResult(succeeded);
+    }
+
+    /**
+     * Fires an event based on the copy operation result.
+     * @param {Boolean} succeeded
+     */
+    handleResult(succeeded) {
+        this.emitter.emit(succeeded ? 'success' : 'error', {
+            action: this.action,
+            text: this.selectedText,
+            trigger: this.trigger,
+            clearSelection: this.clearSelection.bind(this)
+        });
+    }
+
+    /**
+     * Moves focus away from `target` and back to the trigger, removes current selection.
+     */
+    clearSelection() {
+        if (this.trigger) {
+            this.trigger.focus();
+        }
+
+        window.getSelection().removeAllRanges();
+    }
+
+    /**
+     * Sets the `action` to be performed which can be either 'copy' or 'cut'.
+     * @param {String} action
+     */
+    set action(action = 'copy') {
+        this._action = action;
+
+        if (this._action !== 'copy' && this._action !== 'cut') {
+            throw new Error('Invalid "action" value, use either "copy" or "cut"');
+        }
+    }
+
+    /**
+     * Gets the `action` property.
+     * @return {String}
+     */
+    get action() {
+        return this._action;
+    }
+
+    /**
+     * Sets the `target` property using an element
+     * that will be have its content copied.
+     * @param {Element} target
+     */
+    set target(target) {
+        if (target !== undefined) {
+            if (target && typeof target === 'object' && target.nodeType === 1) {
+                if (this.action === 'copy' && target.hasAttribute('disabled')) {
+                    throw new Error('Invalid "target" attribute. Please use "readonly" instead of "disabled" attribute');
+                }
+
+                if (this.action === 'cut' && (target.hasAttribute('readonly') || target.hasAttribute('disabled'))) {
+                    throw new Error('Invalid "target" attribute. You can\'t cut text from elements with "readonly" or "disabled" attributes');
+                }
+
+                this._target = target;
+            }
+            else {
+                throw new Error('Invalid "target" value, use a valid Element');
+            }
+        }
+    }
+
+    /**
+     * Gets the `target` property.
+     * @return {String|HTMLElement}
+     */
+    get target() {
+        return this._target;
+    }
+
+    /**
+     * Destroy lifecycle.
+     */
+    destroy() {
+        this.removeFake();
+    }
+}
+
+module.exports = ClipboardAction;
+
+</script>
