@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  	<title></title>
+
+    <!-- Bootstrap -->
+    <link href="NOTES/themes/default/bootstrap.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h6 class="panel-title"><ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li class="active">Discrepancy Calculator</li>
+</ol></h6>
+  </div>
+  <div class="panel-body">
+  
+<p>To reset this page, please use the reset button below:</p>
+<button type="button" class="btn" onClick="Reset()">Reset This Page</button>
+<br><br>
+	<div align="center">
+	<table id="products" border="1" width="98%" style="border-left-width:0px; border-top-width:0px; border-bottom-width:0px">
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-top-style:solid; border-top-width:1px; border-bottom-style:none; border-bottom-width:medium" width="25%" colspan="5" align="center">
+			<b><font size="4">APPLICANT</font></b></td>
+			<td style="border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-right-style:none; border-right-width:medium; border-top-style:solid; border-top-width:1px; border-bottom-style:none; border-bottom-width:medium" colspan="7" align="center">
+			<b><font size="4">HMRC</font></b></td>
+			<td style="border-right-style:none; border-right-width:medium; border-top-style:solid; border-top-width:1px; border-bottom-style:none; border-bottom-width:medium; border-left-style:none; border-left-width:medium" colspan="5" align="center">
+			
+			<a href="#" data-toggle="tooltip" title="Some tooltip text!">Additional Information Is Available Here</a>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip bs-tooltip-top" role="tooltip">
+  <div class="arrow"></div>
+  <div class="tooltip-inner">
+    This Is A Link
+  </div>
+</div>
+</td>
+		</tr>
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">TSB</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">RTI</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">BIK</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">SA</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">OTHER</td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">START</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">END</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">DAYS</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">BENEFIT</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">FREQ.</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">RATE</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">TSB</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">RTI</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">BIK</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">SA</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">OTHER</td>
+		</tr>
+	
+<!-- ROW 01 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-01-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" id="HMRC-TSB-01-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"><input type="text" id="HMRC-TSB-01-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center"><select id="HMRCTSB0100" onChange="return setHMRCTSB0100()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"><input type="text" class="HMRC-TSB-01-DAYS" id="HMRC-TSB-01-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"><input type="text" class="HMRC-TSB-01-RATE" id="HMRC-TSB-01-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"><button type="button" id="HMRC-TSB-01-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC-TSB" id="HMRC-TSB-01-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center"><input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- SCRIPTS FOR ROW 1 START HERE -->
+<!-- THIS SCRIPT LINKS TO THE TSB BENEFITS DROPDOWN ON ROW 1 -->
+<script>
+function setHMRCTSB0100(){
+// THIS IS THE DROPDOWN CODE
+    var dropdown01 = document.getElementById("HMRCTSB0100");
+    var input = dropdown01.options[dropdown01.selectedIndex];
+    var selection = input.getAttribute("option");
+
+// THESE ARE THE TEXTBOXES ON THE CALCULATOR
+    var textBoxTSB0101 = document.getElementById("HMRC-TSB-01-DAYS");
+    var textBoxTSB0102 = document.getElementById("HMRC-TSB-01-RATE");
+    
+// THESE ARE THE PAYMENT FREQUENCY AND PAYMENT AMOUNT OPTIONS
+    if(selection=="1"){
+        textBoxTSB0101.value = "";
+        textBoxTSB0102.value = "";
+    }
+       else if(selection=="2"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "62.70";
+    }   
+        else if(selection=="3"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "57.90";
+    }   
+        else if(selection=="4"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "73.10";
+    }   
+        else if(selection=="5"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "57.90";
+    }   
+        else if(selection=="6"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "73.10";
+    }   
+        else if(selection=="7"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "57.90";
+    }   
+        else if(selection=="8"){
+        textBoxTSB0101.value = "7";
+        textBoxTSB0102.value = "73.10";
+    }   
+        else if(selection=="9"){
+        textBoxTSB0101.value = "";
+        textBoxTSB0102.value = "";
+    }
+}
+</script>
+
+
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 01 DATES-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-01-START,#HMRC-TSB-01-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-01-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-01-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-01-END').change(function() {
+
+    var start = $('#HMRC-TSB-01-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-01-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-01-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-01-START').val("");
+    $('#HMRC-TSB-01-END').val("");
+    $('#HMRC-TSB-01-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 01-->
+<script>
+    $("#HMRC-TSB-01-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-01-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-01-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-01-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-01-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    
+    var total01 = document.getElementById("HMRC-TSB-TOTAL").value;
+    var total02 = document.getElementById("HMRC-RTI-TOTAL").value;
+    var total03 = document.getElementById("HMRC-BIK-TOTAL").value;
+    var total04 = document.getElementById("HMRC-SA-TOTAL").value;
+    var total05 = document.getElementById("HMRC-OTHER-TOTAL").value;    
+        
+    var finaltotal = parseInt(total01,10) + parseInt(total02,10) + parseInt(total03,10) + parseInt(total04,10) + parseInt(total05,10)
+    document.getElementById("HMRC-TOTAL").value = finaltotal;
+    }); 
+</script>
+
+
+<!-- ROW 02 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="29">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-02-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-02-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-02-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0200" onChange="return setHMRCTSB0200()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-02-DAYS" id="HMRC-TSB-02-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-02-RATE" id="HMRC-TSB-02-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-02-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-02-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 02 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-02-START,#HMRC-TSB-02-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-02-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-02-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-02-END').change(function() {
+
+    var start = $('#HMRC-TSB-02-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-02-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-02-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-02-START').val("");
+    $('#HMRC-TSB-02-END').val("");
+    $('#HMRC-TSB-02-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 02-->
+<script>
+    $("#HMRC-TSB-02-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-02-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-02-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-02-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-02-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 03 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="31">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-03-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-03-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-03-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0300" onChange="return setHMRCTSB0300()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-03-DAYS" id="HMRC-TSB-03-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-03-RATE" id="HMRC-TSB-03-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-03-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-03-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 03 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-03-START,#HMRC-TSB-03-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-03-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-03-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-03-END').change(function() {
+
+    var start = $('#HMRC-TSB-03-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-03-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-03-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-03-START').val("");
+    $('#HMRC-TSB-03-END').val("");
+    $('#HMRC-TSB-03-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 03-->
+<script>
+    $("#HMRC-TSB-03-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-03-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-03-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-03-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-03-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 04 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-04-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-04-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-04-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0400" onChange="return setHMRCTSB0400()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-04-DAYS" id="HMRC-TSB-04-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-04-RATE" id="HMRC-TSB-04-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-04-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-04-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 04 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-04-START,#HMRC-TSB-04-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-04-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-04-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-04-END').change(function() {
+
+    var start = $('#HMRC-TSB-04-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-04-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-04-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-04-START').val("");
+    $('#HMRC-TSB-04-END').val("");
+    $('#HMRC-TSB-04-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 04-->
+<script>
+    $("#HMRC-TSB-04-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-04-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-04-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-04-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-04-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 05 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-05-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-05-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-05-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0500" onChange="return setHMRCTSB0500()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-05-DAYS" id="HMRC-TSB-05-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-05-RATE" id="HMRC-TSB-05-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-05-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-05-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 05 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-05-START,#HMRC-TSB-05-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-05-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-05-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-05-END').change(function() {
+
+    var start = $('#HMRC-TSB-05-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-05-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-05-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-05-START').val("");
+    $('#HMRC-TSB-05-END').val("");
+    $('#HMRC-TSB-05-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 05-->
+<script>
+    $("#HMRC-TSB-05-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-05-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-05-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-05-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-05-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 06 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-06-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-06-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-06-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0600" onChange="return setHMRCTSB0600()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-06-DAYS" id="HMRC-TSB-06-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-06-RATE" id="HMRC-TSB-06-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-06-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-06-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 06 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-06-START,#HMRC-TSB-06-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-06-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-06-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-06-END').change(function() {
+
+    var start = $('#HMRC-TSB-06-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-06-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-06-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-06-START').val("");
+    $('#HMRC-TSB-06-END').val("");
+    $('#HMRC-TSB-06-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 06-->
+<script>
+    $("#HMRC-TSB-06-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-06-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-06-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-06-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-06-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 07 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-07-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-07-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-07-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0700" onChange="return setHMRCTSB0700()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-07-DAYS" id="HMRC-TSB-07-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-07-RATE" id="HMRC-TSB-07-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-07-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-07-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 07 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-07-START,#HMRC-TSB-07-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-07-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-07-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-07-END').change(function() {
+
+    var start = $('#HMRC-TSB-07-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-07-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-07-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-07-START').val("");
+    $('#HMRC-TSB-07-END').val("");
+    $('#HMRC-TSB-07-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 07-->
+<script>
+    $("#HMRC-TSB-07-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-07-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-07-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-07-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-07-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 08 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-08-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-08-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-08-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0800" onChange="return setHMRCTSB0800()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-08-DAYS" id="HMRC-TSB-08-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-08-RATE" id="HMRC-TSB-08-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-08-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-08-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 08 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-08-START,#HMRC-TSB-08-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-08-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-08-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-08-END').change(function() {
+
+    var start = $('#HMRC-TSB-08-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-08-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-08-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-08-START').val("");
+    $('#HMRC-TSB-08-END').val("");
+    $('#HMRC-TSB-08-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 08-->
+<script>
+    $("#HMRC-TSB-08-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-08-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-08-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-08-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-08-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 09 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-09-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-09-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-09-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB0900" onChange="return setHMRCTSB0900()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-09-DAYS" id="HMRC-TSB-09-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-09-RATE" id="HMRC-TSB-09-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-09-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-09-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 09 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-09-START,#HMRC-TSB-09-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-09-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-09-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-09-END').change(function() {
+
+    var start = $('#HMRC-TSB-09-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-09-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-09-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-09-START').val("");
+    $('#HMRC-TSB-09-END').val("");
+    $('#HMRC-TSB-09-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 09-->
+<script>
+    $("#HMRC-TSB-09-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-09-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-09-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-09-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-09-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+<!-- ROW 10 FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-10-START" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" id="HMRC-TSB-10-END" size="9"</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" id="HMRC-TSB-10-DURATION" size="2"</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">
+			<select id="HMRCTSB1000" onChange="return setHMRCTSB1000()">
+			<option option="1" frequency="Choose One">Choose One</option>
+			<option option="2" frequency="CARERS">CARERS</option>
+			<option option="3" frequency="ESA SINGLE -25">ESA SINGLE -25
+			</option>
+			<option option="4" frequency="ESA SINGLE +25">ESA SINGLE +25
+			</option>
+			<option option="5" frequency="ESA LP -18">ESA LP -18</option>
+			<option option="6" frequency="ESA LP +18">ESA LP +18</option>
+			<option option="7" frequency="JSA SINGLE -25">JSA SINGLE -25
+			</option>
+			<option option="8" frequency="JSA SINGLE +25">JSA SINGLE +25
+			</option>
+			<option option="9" frequency="USER DEFINED">OTHER</option></select>
+			</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-10-DAYS" id="HMRC-TSB-10-DAYS" size="2"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<input type="text" class="HMRC-TSB-10-RATE" id="HMRC-TSB-10-RATE" size="4"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">
+			<button type="button" id="HMRC-TSB-10-BUTTON-CALC" class="btn btn-primary btn-xs">=</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-10-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+	
+<!-- THIS SCRIPT HANDLES HMRC TSB ROW 10 DATES-->
+<script>
+    $(document).ready(function() {
+    $( "#HMRC-TSB-10-START,#HMRC-TSB-10-END" ).datepicker({
+        changeMonth: true,
+        changeYear: true,
+        firstDay: 1,
+        startDate: '06/04/2017',
+        endDate: '05/04/2018',
+        dateFormat: 'dd/mm/yy',
+        })
+
+    $("#HMRC-TSB-10-START").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#HMRC-TSB-10-END").datepicker({ dateFormat: 'dd-mm-yy' });
+    $('#HMRC-TSB-10-END').change(function() {
+
+    var start = $('#HMRC-TSB-10-START').datepicker('getDate');
+    var end   = $('#HMRC-TSB-10-END').datepicker('getDate');
+
+    if (start<end) {
+    var days = Math.round((end - start)/1000/60/60/24);
+    $('#HMRC-TSB-10-DURATION').val(days);
+     }
+      else {
+    alert ("Check your dates !!");
+    $('#HMRC-TSB-10-START').val("");
+    $('#HMRC-TSB-10-END').val("");
+    $('#HMRC-TSB-10-DURATION').val("");
+    }
+    });
+    });
+</script>
+
+<!-- THIS SCRIPT TOTALS HMRC TSB ROW 10-->
+<script>
+    $("#HMRC-TSB-10-BUTTON-CALC").click(function() {
+
+    var rate = document.getElementById("HMRC-TSB-10-RATE").value;
+    var duration = document.getElementById("HMRC-TSB-10-DURATION").value;
+    var days = document.getElementById("HMRC-TSB-10-DAYS").value;
+    var result = Math.round((rate / days ) * duration) ;
+    document.getElementById("HMRC-TSB-10-RESULT").value = result;
+
+    var days01 = document.getElementById("HMRC-TSB-01-RESULT").value;
+    var days02 = document.getElementById("HMRC-TSB-02-RESULT").value;
+    var days03 = document.getElementById("HMRC-TSB-03-RESULT").value;
+    var days04 = document.getElementById("HMRC-TSB-04-RESULT").value;
+    var days05 = document.getElementById("HMRC-TSB-05-RESULT").value;
+    var days06 = document.getElementById("HMRC-TSB-06-RESULT").value;
+    var days07 = document.getElementById("HMRC-TSB-07-RESULT").value;
+    var days08 = document.getElementById("HMRC-TSB-08-RESULT").value;
+    var days09 = document.getElementById("HMRC-TSB-09-RESULT").value;
+    var days10 = document.getElementById("HMRC-TSB-10-RESULT").value;
+    var days11 = document.getElementById("HMRC-TSB-11-RESULT").value;
+    var total = parseInt(days01,10) + parseInt(days02,10) + parseInt(days03,10) + parseInt(days04,10) + parseInt(days05,10) + parseInt(days06,10) + parseInt(days07,10) + parseInt(days08,10) + parseInt(days09,10) + parseInt(days10,10) + parseInt(days11,10)
+    document.getElementById("HMRC-TSB-TOTAL").value = total;
+    }); 
+</script>
+
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center" colspan="5">DEDUCTIONS (ENTER AS NEGATIVE)</td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="31%" align="center" colspan="5">DEDUCTIONS (ENTER AS A NEGATIVE)</td>
+		</tr>
+	
+<!-- ROW 11 (DEDUCTIONS) FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-TSB" id="APP-TSB" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-RTI" id="APP-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-BIK" id="APP-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-SA" id="APP-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP-OTHER" id="APP-OTHER" size="6"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-TSB" id="HMRC-TSB-11-RESULT" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-RTI" id="HMRC-RTI" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-BIK" id="HMRC-BIK" size="6"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="HMRC-SA" id="HMRC-SA" size="6"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="HMRC-OTHER" id="HMRC-OTHER" size="6"></td>
+		</tr>
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center" colspan="5">SUB TOTALS</td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="31%" align="center" colspan="5">SUB TOTALS</td>
+		</tr>
+
+<!-- DEDUCTIONS ROW FOR THE APPLICANT AND HMRC, INCLUDES INPUT AREAS FOR FIGURES, DATE SELECTORS, DROPDOWNS AND CALCULATIONS BUTTONS -->
+    	<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">
+			<input type="text" class="APP" id="APP-TSB-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="APP" id="APP-RTI-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="APP" id="APP-BIK-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="APP" id="APP-SA-TOTAL" size="6" value="0"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center"><input type="text" class="APP" id="APP-OTHER-TOTAL" size="6" value="0"></td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center" height="30">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC" id="HMRC-TSB-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC" id="HMRC-RTI-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC" id="HMRC-BIK-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC" id="HMRC-SA-TOTAL" size="6" value="0"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center"><input type="text" class="HMRC" id="HMRC-OTHER-TOTAL" size="6" value="0"></td>
+		</tr>
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center" colspan="5">TOTAL</td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"></td>
+			<td style="border-style: none; border-width: medium" width="4%" align="center"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center"></td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="31%" align="center" colspan="5">TOTAL</td>
+		</tr>
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">
+			<input type="text" class="APP-TOTAL" id="APP-TOTAL" size="6"</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center"><button type="button" id="TOTAL" class="btn btn-primary btn-xs">DIFFERENCE</td></td>
+			<td style="border-style: none; border-width: medium" width="13%" align="center" colspan="5"><input type="textbox" id="result" size="50" style="float: left" /></td>
+			<td style="border-style: none; border-width: medium" width="2%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center"><input type="text" class="HMRC-TOTAL" id="HMRC-TOTAL" size="6" value="0"></td>
+			<td style="border-style: none; border-width: medium" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="3%" align="center">&nbsp;</td>
+		</tr>
+	
+<script>
+ $("#TOTAL").click(function() {
+    alert('Calculation Complete')
+    
+var apptotal = document.getElementById("APP-TOTAL").value;
+var hmrctotal = document.getElementById("HMRC-TOTAL").value;
+
+var total = parseInt(apptotal,10) - parseInt(hmrctotal,10)
+
+
+        var comparison = total;
+        if (comparison < -0.1) str = total + " ( Applicant Has Under Declared )";
+        else if (comparison > 0.1) var str = total + " ( Applicant Has Over Declared )";
+        else var str = "Applicant And HMRC Systems Match";
+
+        $("#result").val(str);
+    });
+</script>
+	
+		<tr>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium" width="1%" align="center" height="30">&nbsp;</td>
+			<td style="border-left-style:solid; border-left-width:1px; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="2%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="4%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="2%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="2%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="2%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:none; border-right-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+			<td style="border-left-style:none; border-left-width:medium; border-right-style:solid; border-right-width:1px; border-top-style:none; border-top-width:medium; border-bottom-style:solid; border-bottom-width:1px" width="3%" align="center">&nbsp;</td>
+		</tr>
+		</table>
+		</div>
+<br>
+<!-- CASEWORKER DETAILS LISTED ALPHABETICALLY BY FIRSTNAME -->
+<!-- "VALUE=" IS AREA/PID/PHONE NUMBER -->
+<p>The notes below can be edited directly on this page on then copied to your clipboard using the relevant button. Please ensure you have NTC open at the Household Notes pages before copying the note you require.</p>
+
+<p>Please select your name from the list below and confirm your details are correct:</p>
+    <div class="form-group">
+      <label for="CASEWORKERS">Select list:</label>
+        <select class="form-control" id="CASEWORKERS">
+          <option selected="selected" value="">None</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generac1</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generac2</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generac3</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generic4</option>
+	      <option value="XXXX/XXXXXXX/XXXXXXXXXX ExX">Generec5</option>
+          <option value="XXXX/7654321/XXXXXXXXXX ExX">Karen Whiston</option>
+          <option value="XXXX/1234567/XXXXXXXXXX ExX">Rebecca Hankin</option>
+        </select>
+        <!-- <small>If your details are incorrect, please click here.</small>-->
+        <small>If your name is not on the list, please select the "generic" option from the dropdown list and manually update your group, PID and telephone number on the Household note you require.</small>
+    </div> 
+
+
+<!-- START OF HOUSEHOLD NOTES -->
+<!-- AREA, PID AND PHONE NUMBER/EXTENSION HAVE BEEN REMOVED AS THESE ARE INSERTED BY THE DROPDOWN ABOVE -->	
+
+    <!-- 01. HH01 HH Note -->
+        <div class="form-group">
+        <label for="comment">HH01</label>
+        <textarea class="form-control" rows="1" id="HH01">HH01 APP DECLARED &#163;XXXX TSB WE HOLD &#163;XXXX, &#163;XXXX RTI, WE HOLD &#163;XXXX, &#163;BIK, WE HOLD &#163;XXXX, &#163;XXXX SA, WE HOLD &#163;XXXX, &#163;0 OTHER, WE HOLD &#163;XXXX </textarea>
+        <button class="btn" data-clipboard-target="#HH01">Copy To Clipboard</button>
+
+</div>
+
+<script>
+
+	var POUND = "\u20ac";
+
+    var DROPDOWN = document.getElementById('CASEWORKERS');
+    var HH01 = document.getElementById('HH01');
+    var HH01APPTSB = document.getElementById('APP-TSB-TOTAL');
+    var HH01APPRTI = document.getElementById('APP-RTI-TOTAL');
+    var HH01APPBIK = document.getElementById('APP-BIK-TOTAL');
+    var HH01APPSA = document.getElementById('APP-SA-TOTAL');
+    var HH01APPOTHER = document.getElementById('APP-OTHER-TOTAL');
+
+    var HH01HMRCTSB = document.getElementById('HMRC-TSB-TOTAL');
+    var HH01HMRCRTI = document.getElementById('HMRC-RTI-TOTAL');
+    var HH01HMRCBIK = document.getElementById('HMRC-BIK-TOTAL');
+    var HH01HMRCSA = document.getElementById('HMRC-SA-TOTAL');
+    var HH01HMRCOTHER = document.getElementById('HMRC-OTHER-TOTAL');
+            
+    DROPDOWN.onchange = function(){
+    HH01.value = HH01.value='HH01 APP DECLARED ';
+    HH01.value = HH01.value  + '\xA3' + HH01APPTSB.value  + ' TSB we hold \xA3'  + HH01HMRCTSB.value  + ', \xA3'  + HH01APPRTI.value  + ' RTI we hold \xA3'  + HH01HMRCRTI.value  + ', \xA3'  + HH01APPBIK.value  + ' BIK we hold \xA3'  + HH01HMRCBIK.value  + ', \xA3'  + HH01APPSA.value  + ' SA we hold \xA3'  + HH01HMRCSA.value  + ', \xA3'  + HH01APPOTHER.value  + ' OTHER we hold \xA3'  + HH01HMRCOTHER.value  + '. '  +  this.value;   
+}
+</script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- THIS SCRIPT TOTALS THE APPLICANT TSB COLUMN -->
+<script>
+$(".APP-TSB").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.APP-TSB').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#APP-TSB-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE APPLICANT SA COLUMN -->
+<script>
+$(".APP-SA").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.APP-SA').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#APP-SA-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE APPLICANT RTI COLUMN -->
+<script>
+$(".APP-RTI").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.APP-RTI').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#APP-RTI-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE APPLICANT BIK COLUMN -->
+<script>
+$(".APP-BIK").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.APP-BIK').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#APP-BIK-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE APPLICANT OTHER COLUMN -->
+<script>
+$(".APP-OTHER").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.APP-OTHER').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#APP-OTHER-TOTAL').val(sum);
+
+}
+</script>
+
+
+
+
+
+
+
+
+<!-- THIS SCRIPT TOTALS THE HMRC TSB COLUMN -->
+<script>
+$(".HMRC-TSB").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.HMRC-TSB').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#HMRC-TSB-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE HMRC SA COLUMN -->
+<script>
+$(".HMRC-SA").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.HMRC-SA').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#HMRC-SA-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE HMRC RTI COLUMN -->
+<script>
+$(".HMRC-RTI").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.HMRC-RTI').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#HMRC-RTI-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE HMRC RTI COLUMN -->
+<script>
+$(".HMRC-BIK").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.HMRC-BIK').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#HMRC-BIK-TOTAL').val(sum);
+
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE HMRC OTHER COLUMN -->
+<script>
+$(".HMRC-OTHER").on('change', calculate);
+
+function calculate() {
+  var sum = 0;
+  $('.HMRC-OTHER').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#HMRC-OTHER-TOTAL').val(sum);
+
+}
+</script>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- THIS SCRIPT TOTALS THE APPLICANT SUB TOTAL ROWS -->
+<script>
+$(".APP").on('change', calculate);
+$(".APP-TSB").on('change', calculate);
+$(".APP-SA").on('change', calculate);
+$(".APP-RTI").on('change', calculate);
+$(".APP-BIK").on('change', calculate);
+$(".APP-OTHER").on('change', calculate);
+$(".APP-TOTAL").on('change', calculate);
+function calculate() {
+  var sum = 0;
+  $('.APP').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#APP-TOTAL').val(sum);
+
+$('#APP-TOTAL').on('change', calculate);
+}
+</script>
+
+<!-- THIS SCRIPT TOTALS THE HMRC SUB TOTAL ROWS -->
+<script>
+$(".HMRC").on('change', calculate);
+$(".HMRC-TSB").on('change', calculate);
+$(".HMRC-SA").on('change', calculate);
+$(".HMRC-RTI").on('change', calculate);
+$(".HMRC-BIK").on('change', calculate);
+$(".HMRC-OTHER").on('change', calculate);
+$(".HMRC-TOTAL").on('change', calculate);
+function calculate() {
+  var sum = 0;
+  $('.HMRC').each(function(i, obj) {
+    if ($.isNumeric(this.value)) {
+      sum += parseFloat(this.value);
+    }
+  });
+  $('#HMRC-TOTAL').val(sum);
+
+$('#HMRC-TOTAL').on('change', calculate);
+}
+</script>
+
+
+</body>
+</html>
+    <!-- Page Content -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="NOTES/themes/addons/jquery-1.12.4.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="NOTES/themes/addons/bootstrap.min.js"></script>
+    
+    <!-- DateSelector JavaScript -->
+    <script src="NOTES/themes/addons/bootstrap-datepicker.js"></script>
+    <script src="NOTES/themes/addons/bootstrap-datepicker.min.js"></script>
+    
+
+
+  </body>
+</html>
